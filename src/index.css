@@ -1,13 +1,85 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Roboto+Mono:wght@300&display=swap');
+
+html {
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  align-items: center;
+  font-weight: bolder;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h2 {
+  font-size: 30px;
+}
+
+h6 {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.container {
+  border: 3px solid gold;
+  border-radius: 5px;
+  padding: 0;
+  width: fit-content;
+  display: inline-block;
+}
+
+.row {
+  margin: 0;
+  height: fit-content;
+  border: 0;
+}
+
+.square {
+  font-size: 30px;
+  font-weight: bold;
+  border: 1px solid black;
+  background-color: rgb(252, 252, 252);
+  margin: 0;
+  color: black;
+  width: 100px;
+  height: 100px;
+  transition: 0.3s;
+  float: left;
+}
+
+.square:hover {
+  cursor: pointer;
+  background-color: rgb(255, 170, 0);
+}
+
+h4 {
+  margin: 10px;
+  font-size: 20px;
+}
+
+#restart {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(232, 32, 32);
+  border-radius: 5px;
+  border: 1px solid rgb(255, 0, 0);
+  color: white;
+  font-size: 15px;
+  transition: 0.25s;
+}
+
+#restart:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 1px 1px 10px 3px rgba(255, 255, 255, 0.2);
+}
+
+.win {
+  color: green;
+}
+
+.tie {
+  color: rgb(255, 123, 0);
+}
+
+.normal {
+  color: rgb(91, 69, 4);
 }
